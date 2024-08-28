@@ -1,5 +1,5 @@
 export const seo = {
-  title: 'wulongxiong | 乌龙熊',
+  title: '乌龙熊 | wulongxiong',
   description:
     '我叫 乌龙熊，考研党，无业游民。',
   url: new URL(
