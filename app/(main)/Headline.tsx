@@ -80,7 +80,7 @@ export function Headline() {
       >
         <Balancer>
           我是 乌龙熊，
-          <a herf="https://wulongxiong.com">个人主站</a>
+          <a href="https://wulongxiong.com">个人主站</a>
           目前在家备战考研，希望能上岸🙏。
           没有cs基础但是希望能发点什么🤣。
         </Balancer>
