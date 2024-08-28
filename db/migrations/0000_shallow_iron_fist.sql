@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS "comments" (
 	"created_at" timestamp DEFAULT now(),
 	"updated_at" timestamp DEFAULT now()
 );
---> statement-breakpoint
+
 CREATE TABLE IF NOT EXISTS "guestbook" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"user_id" varchar(200) NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS "guestbook" (
 	"created_at" timestamp DEFAULT now(),
 	"updated_at" timestamp DEFAULT now()
 );
---> statement-breakpoint
+
 CREATE TABLE IF NOT EXISTS "newsletters" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"subject" varchar(200),
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS "newsletters" (
 	"created_at" timestamp DEFAULT now(),
 	"updated_at" timestamp DEFAULT now()
 );
---> statement-breakpoint
+
 CREATE TABLE IF NOT EXISTS "subscribers" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"email" varchar(120),
@@ -35,5 +35,5 @@ CREATE TABLE IF NOT EXISTS "subscribers" (
 	"unsubscribed_at" timestamp,
 	"updated_at" timestamp DEFAULT now()
 );
---> statement-breakpoint
+
 CREATE INDEX IF NOT EXISTS "post_idx" ON "comments" ("post_id");
